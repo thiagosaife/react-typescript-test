@@ -19,7 +19,7 @@ class App extends Component<Props, State> {
     this.handleSearch = this.handleSearch.bind(this)
   }
 
-  handleSearch(fruit: string) {
+  private handleSearch(fruit: string) {
     this.setState({ fruit })
   }
 

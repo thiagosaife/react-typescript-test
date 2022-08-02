@@ -14,7 +14,7 @@ class Input extends Component<Props, {}> {
     this.handleSearch = this.handleSearch.bind(this)
   }
 
-  handleSearch(evt: EventObj) {
+  private handleSearch(evt: EventObj) {
     this.props.HandleSearch(evt.target.value)
   }
   render() {

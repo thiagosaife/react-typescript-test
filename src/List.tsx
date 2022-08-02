@@ -25,7 +25,7 @@ class List extends Component<Props, State> {
     }
   }
 
-  handleSearch() {
+  private handleSearch() {
     return this.state.fruits?.filter((f) => {
       if (this.props.Fruit) {
         return f.toLowerCase().indexOf(this.props.Fruit.toLocaleLowerCase()) !== -1
@@ -35,7 +35,7 @@ class List extends Component<Props, State> {
     .map((f, i) => <li key={i}>{f}</li>)
   }
 
-  handleFruits() {
+  private handleFruits() {
     if (this.state.fruits && this.state.fruits.length) {
       return this.state.fruits.map((f, i) => <li key={i}>{f}</li>)
     }
